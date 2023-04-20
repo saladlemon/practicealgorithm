@@ -5,9 +5,7 @@ function solution(array) {
     let Subcount = 0;
     let count = 0;
     
-    if(length === 1){
-        mode = arr[0];
-    }else{
+    
         for(i=0; i<length; i++){
             if(arr[i] === arr[i+1]){
                 count = count + 1;
@@ -22,7 +20,6 @@ function solution(array) {
                 count = 0;
             }
         }
-    }
     var answer = mode;
     return answer;
 }
