@@ -1,11 +1,9 @@
-N = input()
-N_LOW = N.lower()
-Ns = set(N_LOW)
-Nl = list(Ns)
+N = input().lower()
+Nl = list(set(N))
 L = []
 for i in Nl:
     cnt = 0
-    for j in N_LOW:
+    for j in N:
         if i == j:
             cnt += 1
     L.append(cnt)
